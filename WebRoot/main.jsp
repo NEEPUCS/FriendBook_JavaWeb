@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
-    <title>好友录管理系统</title>  
+    <title>chy参与管理系统修改</title>  
     <link rel="stylesheet" href="css/pintuer.css">
     <link rel="stylesheet" href="css/admin.css">
     <script src="js/jquery.js"></script>   
@@ -29,12 +29,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </script>
 </head>
 <body style="background-color:#f2f9fd;">
-<%
-	request.setCharacterEncoding("UTF-8");
-	response.setCharacterEncoding("UTF-8");	
-  if(session.getAttribute("login")==null){
-  	response.sendRedirect("error.jsp");
-  } %>
 <div class="header bg-main" style="border:solid 1px">
   <div class="logo margin-big-left fadein-top">
     <h1><img src="images/y.jpg" class="radius-circle rotate-hover" height="50" alt="" />超级管理系统</h1>
@@ -51,15 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <ul style="display:block">
     <li><a href="showAll" target="right"><span class="icon-caret-right"></span>查询所有好友</a></li>
     <li><a href="query.jsp" target="right"><span class="icon-caret-right"></span>按名字查询好友</a></li>
-    <li><a href="add.jsp" target="right"><span class="icon-caret-right"></span>添加好友</a></li>  
-    <li><a href="ShowAll_mdf" target="right"><span class="icon-caret-right"></span>修改好友</a></li>   
-    <li><a href="ShowAll_del" target="right"><span class="icon-caret-right"></span>删除好友</a></li>     
-  </ul>   
-  <h2><span class="icon-pencil-square-o"></span>栏目管理</h2>
-  <ul>
-    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
-    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
-    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>分类管理</a></li>        
+
   </ul>  
 </div>
 <script type="text/javascript">
@@ -76,7 +62,7 @@ $(function(){
 });
 </script>
 <ul class="bread">
-  <li><a href="info.jsp" target="right" class="icon-home"> 首页</a></li>
+  <li><a href="##" target="right" class="icon-home"> 首页</a></li>
   <li><a href="##" id="a_leader_txt">网站信息</a></li>
   <li><b>当前语言：</b><span style="color:red;">中文</php></span>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;切换语言：<a href="##">中文</a> &nbsp;&nbsp;<a href="##">英文</a> </li>
@@ -85,6 +71,7 @@ $(function(){
   <iframe scrolling="auto" rameborder="0" src="info.jsp" name="right" width="100%" height="100%"></iframe>
 </div>
 <div style="text-align:center;">
+<p>来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
 </div>
 </body>
 </html>   
