@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>15Progect</display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.bjsxt.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OutServlet</servlet-name>
+    <servlet-class>com.bjsxt.servlet.OutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>com.bjsxt.servlet.RegServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DataServlet</servlet-name>
+    <servlet-class>com.bjsxt.servlet.DataServlet</servlet-class>
+  </servlet>
+ 
+
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OutServlet</servlet-name>
+    <url-pattern>/out</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DataServlet</servlet-name>
+    <url-pattern>/data</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ShowAll</servlet-name>
+    <servlet-class>com.bjsxt.servlet.ShowAll</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>ShowAll</servlet-name>
+    <url-pattern>/showAll</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>MyAdd</servlet-name>
+    <servlet-class>com.bjsxt.servlet.MyAdd</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>MyAdd</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>MyMdf</servlet-name>
+    <servlet-class>com.bjsxt.servlet.MyMdf</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>MyMdf</servlet-name>
+    <url-pattern>/mdf</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>MyUpdate</servlet-name>
+    <servlet-class>com.bjsxt.servlet.MyUpdate</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>MyUpdate</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>MyDelete</servlet-name>
+    <servlet-class>com.bjsxt.servlet.MyDelete</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>MyDelete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>ShowByName</servlet-name>
+    <servlet-class>com.bjsxt.servlet.ShowByName</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>ShowByName</servlet-name>
+    <url-pattern>/showByName</url-pattern>
+  </servlet-mapping>
+
+
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
